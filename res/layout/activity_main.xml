@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:gravity="center"
+android:orientation="vertical" >
+
+<!-- WE WILL PLACE THE LIST OF POKEMONs HERE IN THIS LIST -->
+<ListView
+    android:id="@+id/android:list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/footerLayoutHorizontal"
+    android:layout_below="@+id/textTitle" />
+
+<LinearLayout
+    android:id="@+id/footerLayoutHorizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/labelPageInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+    	<!-- DINAMICALLY LOAD SOME PAGINATION BUTTONS (IF NEEDED)  -->
+    </LinearLayout>
+</LinearLayout>
+
+<TextView
+    android:id="@+id/textTitle"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+	android:text="@string/pokemon_list"     
+    android:textSize="20sp"
+    />
+
+</RelativeLayout>

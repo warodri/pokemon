@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:gravity="center"
+android:orientation="vertical" >
+
+<!-- WE WILL PLACE AN IMAGE OF SELECTED POKEMON HERE -->
+<ImageView
+    android:id="@+id/image"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/footerLayoutHorizontal"
+    android:layout_below="@+id/textTitle" 
+    android:layout_margin="10dp"
+    />
+
+<LinearLayout
+    android:id="@+id/footerLayoutHorizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/labelPokemonInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        />
+</LinearLayout>
+
+<TextView
+    android:id="@+id/textTitle"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+	android:text="@string/pokemon_list"     
+    android:textSize="20sp"
+    />
+
+</RelativeLayout>
