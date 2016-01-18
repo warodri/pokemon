@@ -1,8 +1,5 @@
 # Create an application to consult in [Pokéapi](http://pokeapi.co/)#
 
-#pokemon-warodri#
-================
-
 This is the README file for my test application
 getting Pokemon information from REST API [Pokéapi](http://pokeapi.co/).
 
